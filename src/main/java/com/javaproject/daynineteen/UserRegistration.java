@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
+//    Created the Object
     static UserRegistration userRegistration = new UserRegistration();
     static Scanner sc = new Scanner(System.in);
 
@@ -15,6 +16,7 @@ public class UserRegistration {
         }
     }
 
+//    Displaying the menu
     public int showMenu(){
         System.out.println("Choose an option : \n 1.  Validate First Name \n 2. Validate Last Name \n " +
                 "3. Validate Email \n 4. Validate Mobile Number \n 5. Validate Password \n " +
@@ -23,6 +25,7 @@ public class UserRegistration {
         return (sc.nextInt());
     }
 
+//    Performing the Task according to the user selection
     public void userSelection(int option) {
         switch (option){
             case 1:
@@ -52,6 +55,7 @@ public class UserRegistration {
         }
     }
 
+//    Validating the user input and displaying the answer
     public void validateFirstName(String firstName) {
         boolean valid = Pattern.matches("[A-Z]{1}[A-Za-z]+",firstName);
         System.out.println(valid);

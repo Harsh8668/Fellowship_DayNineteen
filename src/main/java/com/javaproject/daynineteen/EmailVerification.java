@@ -17,7 +17,7 @@ public class EmailVerification {
         emailVerification.verification(validEmails);
         emailVerification.verification(inValidEmails);
     }
-
+//    Verifying the Emails Address
     public void verification(String [] emails) {
         for (int i=0; i < emails.length; i++){
             boolean check = Pattern.matches("^[a-zA-Z]+[-\\+\\_\\.a-zA-Z0-9]+[@][a-zA-Z0-9]+([.]?[a-zA-Z\\,]{2,3}){2}", emails[i]);
